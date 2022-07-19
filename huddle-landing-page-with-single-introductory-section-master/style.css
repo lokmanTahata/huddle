@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background-image: url("images/bg-desktop.svg");
+    background-size: contain;
+}
+.All{
+    border : 3px solid blue;
+    width : 80% ;
+    height : calc(100vh - 60px) ;
+    margin-left : 0 ;
+    position : relative ;
+    left : 10% ;
+}
+.logo{
+    width : 200px ;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom : 40px ;
+    background-color : violet ;
+}
+.container{
+    display : flex ;
+    height: 60vh;
+    margin-top : 50px ;
+}
+.illust{
+    border : 2px solid blue ;
+    width : calc(50% ) ;
+    margin-right : 60px ;
+    
+}
+
+.para{
+    width: auto;
+    
+    font-size: 30px;
+    border: 2px solid red;
+}
+.para h1{
+    max-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.para p , .para h1{
+    margin: 10px;
+}
+@media only screen and (max-width:963px) {
+        .container{
+            margin: auto;
+            height: 70vh;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }  
+        .illust{
+            width: auto;
+            
+        }
+}
